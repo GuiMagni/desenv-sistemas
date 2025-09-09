@@ -18,7 +18,7 @@ with open ("compras.txt","r") as arquivo:
 
 with open ("compras.txt" "r") as arquivo:
     for produto in arquivo:
-        print ("produto:" produto.strip())
+        print("produto:", produto.strip())
                                 #"Strip" = Remover espaços em branco
        
 # Acrescentar dados ao final
