@@ -46,8 +46,8 @@ def acessar_lista(lista, i):
         print("Erro: Índice fora de alcance.")
 
 minha_lista = [10, 20, 30]
-acessar_lista(minha_lista, 2)  # 30
-acessar_lista(minha_lista, 5)  # Erro
+acessar_lista(minha_lista, 2) 
+acessar_lista(minha_lista, 5)  
 
 
 
@@ -57,8 +57,8 @@ def dividir(a, b):
     except ZeroDivisionError:
         print("Erro: Não é possível dividir por zero.")
 
-dividir(10, 2)  # 5.0
-dividir(10, 0)  # Erro
+dividir(10, 2)  
+dividir(10, 0)  
 
 
 
@@ -70,6 +70,6 @@ def converter_para_inteiro(valor):
     except ValueError:
         print("Erro: O valor não pode ser convertido para inteiro.")
 
-converter_para_inteiro("123")  # 123
-converter_para_inteiro("abc")  # Erro
+converter_para_inteiro("123")  
+converter_para_inteiro("abc") 
 

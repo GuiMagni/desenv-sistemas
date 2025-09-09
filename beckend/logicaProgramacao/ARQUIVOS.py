@@ -4,7 +4,7 @@
 # a abrir no modo edição
 # r abrir no modo leitura
   
-  with open ("Tarefas.txt", "w") as arquivo:
+with open ("Tarefas.txt", "w") as arquivo:
     arquivo.write ("Lavar a Louça \n")
     arquivo.write ("Lavar Quintal")
 
