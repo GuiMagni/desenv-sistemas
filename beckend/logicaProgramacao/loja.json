@@ -16,5 +16,47 @@
         "quantidade": 30,
         "preco": 15.0,
         "em_estoque": true
+    },
+    {
+        "id": 104,
+        "nome": "arroz",
+        "quantidade": 10,
+        "preco": 10.0,
+        "em_estoque": true
+    },
+    {
+        "id": 110,
+        "nome": "coca",
+        "quantidade": 20,
+        "preco": 30.0,
+        "em_estoque": true
+    },
+    {
+        "id": 102,
+        "nome": "arroz",
+        "quantidade": 70,
+        "preco": 30.0,
+        "em_estoque": true
+    },
+    {
+        "id": 798,
+        "nome": "coca",
+        "quantidade": 50,
+        "preco": 43.0,
+        "em_estoque": true
+    },
+    {
+        "id": 444,
+        "nome": "arroz",
+        "quantidade": 40,
+        "preco": 30.0,
+        "em_estoque": true
+    },
+    {
+        "id": 555,
+        "nome": "arroz",
+        "quantidade": 50,
+        "preco": 79.0,
+        "em_estoque": true
     }
 ]

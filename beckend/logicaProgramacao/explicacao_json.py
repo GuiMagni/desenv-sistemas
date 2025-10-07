@@ -37,8 +37,8 @@ print("Produto cadastrado com sucesso!")
 
 # Modificar Produto
 
-id_produto_modificar = int (input("Digite o id para modificar:"))
-nova_quantidade = int (input("Digite a nova quantidade:"))
+id_produto_modificar = int(input("Digite o id para modificar:"))
+nova_quantidade = int(input("Digite a nova quantidade:"))
 
 try:
     with open ("loja.json","r") as arquivo:
@@ -49,10 +49,10 @@ except FileNotFoundError:
 produto_encontrado = False
 
 for produto in inventario:
-    if produto["id"] == id_produto_modificar:
+    if produto['id'] == id_produto_modificar:
         # Colocamos a Nova Quantidade
-        produto["quantidade"] = nova_quantidade
-        produto["em_estoque"] = nova_quantidade > 0
+        produto['quantidade'] = nova_quantidade
+        produto['em_estoque'] = nova_quantidade > 0
         produto_encontrado = True
         break;
 
@@ -77,7 +77,7 @@ produto_excluido = False
 
 id_produto_excluir = int (input("Digite o id do produto para excluir"))
 for produto in inventario:
-    if produto["id"] != id_produto_excluir
+    if produto["id"] != id_produto_excluir:
        #Se o id for diferente, adicionamos a nova lista
        novo_inventario.append(produto)
     else:
@@ -102,11 +102,11 @@ try:
     else:
         print("---Lista de produtos no inventario---")
         for produto in inventario:
-            print(f"\n--Produto{produto.get("id")}--")
-            print(f"Nome:{produto.get("nome_produto","n/a")}")
-            print(f"Preço:{produto.get("preco_unitario", 0):.2f}")
-            print(f"Quantidade:{produto.get("quantidade", 0)}unidades")
-            print(f"Em estoque:{produto.get("em_estoque")}")
+            print(f"\n--Produto{produto.get('id')}--")
+            print(f"Nome:{produto.get('nome_produto','n/a')}")
+            print(f"Preço:{produto.get('preco_unitario', 0):.2f}")
+            print(f"Quantidade:{produto.get('quantidade', 0)}unidades")
+            print(f"Em estoque:{produto.get('em_estoque')}")
 except FileNotFoundError:
     print("Arquivo não encontrado")            
 
